@@ -7,3 +7,5 @@
 # Credits
 
 1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+
+2) Thank [Snowflyt](https://www.zhihu.com/people/wo-mo-mo-kan-ni-zhuang-bi) for his wonderful tutor of NvChad, it helped me a lot! [环境配置指南/编辑器 – Neovim 安装配置教程（基于 NvChad）](https://zhuanlan.zhihu.com/p/712125953)
