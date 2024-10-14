@@ -14,6 +14,8 @@ return {
   performance = {
     rtp = {
       disabled_plugins = {
+        -- "copilot",
+        "telescope",
         "2html_plugin",
         "tohtml",
         "getscript",
@@ -33,7 +35,7 @@ return {
         "vimballPlugin",
         "zip",
         "zipPlugin",
-        "tutor",
+        -- "tutor",
         "rplugin",
         "syntax",
         "synmenu",
