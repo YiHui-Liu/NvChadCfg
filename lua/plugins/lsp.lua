@@ -1,17 +1,23 @@
+---@type LazySpec
 -- Language server protocol configuration
 return {
     {
         "neovim/nvim-lspconfig",
         lazy = false,
-        config = function()
-            require "configs.lsp"
-        end,
     },
 
-    --- close lazy load of Mason 
+    --- close lazy load of Mason
     {
         "williamboman/mason.nvim",
         lazy = false,
+    },
+
+    {
+        "williamboman/mason-lspconfig.nvim",
+        lazy = false,
+        opts = function()
+            return require "configs.lsp"
+        end,
     },
 
     --- Typst

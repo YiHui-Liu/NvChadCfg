@@ -1,3 +1,5 @@
+---@type LazySpec
+-- Conform
 return   {
     "stevearc/conform.nvim",
     lazy = false,
