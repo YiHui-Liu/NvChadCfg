@@ -22,7 +22,9 @@ return {
 
     --- Github Copilot
     {
-        "github/copilot.vim",
-        lazy = false,
+        "zbirenbaum/copilot.lua",
+        cmd = "Copilot",
+        event = "InsertEnter",
+        opts = {},
     },
 }

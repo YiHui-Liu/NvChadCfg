@@ -14,7 +14,6 @@ return {
     performance = {
         rtp = {
             disabled_plugins = {
-                -- "copilot",
                 "telescope",
                 "2html_plugin",
                 "tohtml",
