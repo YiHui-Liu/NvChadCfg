@@ -1,5 +1,5 @@
 ---@type LazySpec
--- Highlighting 
+-- Highlighting
 return {
     {
         "nvim-treesitter/nvim-treesitter",
@@ -11,5 +11,16 @@ return {
                 "python",
             },
         },
+    },
+    {
+        "nvim-treesitter/nvim-treesitter-context",
+        lazy = false,
+    },
+    {
+        "hiphish/rainbow-delimiters.nvim",
+        lazy = false,
+        config = function()
+            require "configs.highlight"
+        end,
     },
 }

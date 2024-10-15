@@ -1,7 +1,6 @@
 ---@type LazySpec
 -- UI Configurations
 return {
-    --- Nvim-tree
     {
         "nvim-tree/nvim-tree.lua",
         opts = {
@@ -10,5 +9,9 @@ return {
                 custom = { 'node_modules', '.git', '.cache' },
             }
         },
+    },
+    {
+        "Bekaboo/dropbar.nvim",
+        lazy = false,
     },
 }

@@ -20,8 +20,8 @@ local ensure_installed = {
     -- YAML = { "yamlls", "spectral" },
     -- Dev
     C = { "clangd", "clang-format" },
-    CMake = { "cmake" },
     Cpp = { "clangd", "clang-format" },
+    CMake = { "cmake" },
     Lua = { "lua_ls", "stylua" },
     Python = { "pyright", "ruff" },
     -- Web

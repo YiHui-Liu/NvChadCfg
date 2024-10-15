@@ -9,7 +9,6 @@ o.cursorlineopt ='both' -- to enable cursorline!
 --- Line
 o.number = true
 o.relativenumber = true
-o.sidescroll = 1
 
 --- Tab
 o.tabstop = 4
