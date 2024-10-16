@@ -24,5 +24,12 @@ return {
     {
         "kaarmu/typst.vim",
         ft = "typ"
-    }
+    },
+
+    {
+        "folke/trouble.nvim",
+        event = "BufRead",
+        cmd = { "Trouble" },
+        opts = {},
+    },
 }

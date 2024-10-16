@@ -19,12 +19,20 @@ return {
             }
         }
     },
-
-    --- Github Copilot
     {
-        "zbirenbaum/copilot.lua",
-        cmd = "Copilot",
-        event = "InsertEnter",
-        opts = {},
+        "folke/persistence.nvim",
+        event = "BufReadPre",
+        opts = {
+            need = 2,
+        }
     },
+    {
+        "mg979/vim-visual-multi",
+        event = "BufReadPre",
+        init = function()
+            vim.g.VM_maps = {
+                ["Find Under"] = "<C-d>"
+            }
+        end,
+    }
 }

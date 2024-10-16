@@ -20,7 +20,7 @@ map("i", "<C-_>", "<Esc>gcc^i", { desc = "comment toggle", remap = true })
 map("v", "<C-_>", "gc", { desc = "comment toggle", remap = true })
 
 --- Copy, paste and rename
-map({ "n", "i", "v" }, "<C-c>", "\"+y", { desc = "copy seleted" })
+map({ "n", "i", "v" }, "<C-c>", "\"+y", { desc = "copy selected" })
 map({ "n", "i", "v" }, "<C-v>", "\"+p", { desc = "paste" })
 map({ "n", "i", "v" }, "<F2>", function()
     if vim.bo.filetype == "NvimTree" then
@@ -88,3 +88,26 @@ unmap("n", "<leader>cm")
 unmap("n", "<leader>gt")
 unmap("n", "<leader>pt")
 unmap("n", "<leader>ma")
+
+-- persistence
+local ps = require("persistence")
+map("n", "<leader>ps", function() ps.load() end, { desc = "Persistence load session" })
+map("n", "<leader>pS", function() ps.select() end, { desc = "Persistence select session" })
+map("n", "<leader>pl", function() ps.load({ last = true }) end, { desc = "Persistence load last session" })
+
+-- Notify & Noice
+map("n", "<leader>on", ":Notifications<cr>", { desc = "Noice show notifications" })
+map("n", "<leader>om", ":messages<cr>", { desc = "Notify show messages" })
+map("n", "<leader>of", ":Noice fzf<cr>", { desc = "Notify search with fzf" })
+map("n", "<leader>od", ":NoiceDisable<cr>", { desc = "Notify disable" })
+map("n", "<leader>oo", ":NoiceEnable<cr>", { desc = "Notify enable" })
+
+-- Trouble
+map("n", "<C-t>", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Trouble diagnostics" })
+map("n", "<leader>tt", "<cmd>Trouble diagnostics toggle<cr>", { desc = "Trouble diagnostics" })
+map("n", "<leader>tb", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>", { desc = "Trouble buffer diagnostics" })
+map("n", "<leader>ts", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Trouble symbols" })
+map("n", "<leader>tq", "<cmd>Trouble qflist toggle<cr>", { desc = "Trouble show quickfix" })
+map("n", "<leader>tl", "<cmd>Trouble loclist toggle<cr>", { desc = "Trouble show loclist" })
+map("n", "<leader>tr", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>", { desc = "Trouble show lsp references" })
+

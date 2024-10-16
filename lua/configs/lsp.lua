@@ -10,7 +10,7 @@ local default_opts = {
 
 local eagerly_installed_langs = { "Lua", "Markdown" }
 local ensure_installed = {
-    ["*"] = { "typos_lsp" },
+    -- ["*"] = { "typos_lsp" },
     -- Script
     Bash = { "bashls", "shellcheck", "shfmt" },
     -- JSON = { "jsonls", "spectral" },
