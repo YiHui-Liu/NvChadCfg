@@ -9,6 +9,7 @@ o.cursorlineopt ='both' -- to enable cursorline!
 --- Line
 o.number = true
 o.relativenumber = true
+o.wrap = false
 
 --- Tab
 o.tabstop = 4

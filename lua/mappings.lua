@@ -42,10 +42,10 @@ map({ "n", "i", "v" }, "<A-w>", function()
 end, { desc = "wrap line" })
 
 --- Disable Arrow Keys
-map({ "n", "i", "v" }, "<Left>", "<Nop>")
-map({ "n", "i", "v" }, "<Right>", "<Nop>")
-map({ "n", "i", "v" }, "<Up>", "<Nop>")
-map({ "n", "i", "v" }, "<Down>", "<Nop>")
+-- map({ "n", "i", "v" }, "<Left>", "<Nop>")
+-- map({ "n", "i", "v" }, "<Right>", "<Nop>")
+-- map({ "n", "i", "v" }, "<Up>", "<Nop>")
+-- map({ "n", "i", "v" }, "<Down>", "<Nop>")
 
 -- LSP
 map("n", "gh", vim.lsp.buf.hover, { desc = "LSP hover doc" })
